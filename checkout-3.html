@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><img src="img/logo-all-dark.svg" alt="" height="40px"
+                    class="navbar-logo"></a>
+            <a class="nav-link text-secondary order-sm-2 " href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <div class="collapse navbar-collapse order-sm-1" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="font-weight: bolder;">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="home.html">首頁<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container px-sm-3 px-0">
+        <div class="row justify-content-center negative-margin">
+            <div class="col-sm-6 px-sm-3 px-0">
+                <div class="bg-secondary text-primary justify-content-between pb-5">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-6">
+                            <div class="text-primary ml-5 py-5" style="font-size:36px;font-weight: bolder">發票</div>
+                        </div>
+                        <div class="col-5 progress-line d-flex justify-content-between px-0">
+                            <div class="progress-dot progress-active">
+                                <i class="material-icons done-icon" style="font-size: 14px">
+                                    done
+                                </i>
+                            </div>
+                            <div class="progress-dot progress-active">
+                                <i class="material-icons done-icon" style="font-size: 14px">
+                                    done
+                                </i>
+                            </div>
+                            <div class="progress-dot progress-active"></div>
+                        </div>
+                    </div>
+                    <div class="row mx-5">
+                        <div class="col-6 px-0 mb-3">
+                            <a href="#" class="e-invoice-btn btn btn-outline-primary w-100 rounded-0 active"
+                                style="font-size:20px;font-weight: bolder">電子發票</a>
+                        </div>
+                        <div class="col-6 px-0 mb-3">
+                            <a href="#" class="paper-invoice-btn btn btn-outline-primary w-100 rounded-0"
+                                style="font-size:20px;font-weight: bolder">郵寄發票</a>
+                        </div>
+                        <div class="invoice-pagination1">
+                            <div class="row" style="font-size: 20px;font-weight: bolder">
+                                <div class="col-12 form-group">
+                                    <label for="email">電子郵件</label>
+                                    <input type="email" class="form-control bg-primary rounded-0" id="email"
+                                        placeholder="example@email.com" style="height: 56px">
+                                </div>
+                                <div class="col-12 form-group mb-0">
+                                    <label for="invoice">統一編號 (選填)</label>
+                                    <input type="text" class="form-control bg-primary rounded-0" id="invoice"
+                                        placeholder="123456" style="height: 56px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice-pagination2" style="display:none">
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <label for="city" style="font-size: 20px;font-weight: bolder">地址</label>
+                                    <select class="form-control bg-primary rounded-0" id="city"
+                                        style="height: 56px">
+                                        <option value="高雄市">高雄市</option>
+                                        <option value="台南市">台南市</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 form-group">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <input type="checkbox" style="width:16px;height:16px;margin-bottom: 8px">
+                                        <label for="" class="text-warning" style="font-weight: bolder">同運送地址</label>
+                                    </div>
+                                    <select class="form-control bg-primary rounded-0" id="region"
+                                        style="height: 56px;margin-top: 6px">
+                                        <option value="新興區">新興區</option>
+                                        <option value="前鎮區">前鎮區</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 form-group mb-5">
+                                    <input type="text" class="form-control bg-primary rounded-0" id="address"
+                                        placeholder="幸福路 520 號" style="height: 56px">
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label for="invoice" style="font-size: 20px;font-weight: bolder">統一編號 (選填)</label>
+                                    <input type="text" class="form-control bg-primary rounded-0" id="invoice"
+                                        placeholder="123456" style="height: 56px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="checkout-success.html" style="text-decoration:none"><button
+                        class="item-btn btn btn-block btn-success text-secondary rounded-0 py-3">確認結帳</button></a>
+            </div>
+            <div class="checkout-list col-4 mb-6">
+                <div class="border border-primary mb-4">
+                    <div class="bg-primary text-info text-center py-3">
+                        <h3 style="font-weight: bolder;">訂單摘要</h3>
+                    </div>
+                    <div class="d-flex justify-content-between text-info pt-3 mx-3">
+                        <span>小計</span>
+                        <span>$1000</span>
+                    </div>
+                    <div class="d-flex justify-content-between text-info mx-3">
+                        <span>運費</span>
+                        <span>$300</span>
+                    </div>
+                    <div class="d-flex justify-content-between text-info py-3 mx-3"
+                        style="font-size:20px;font-weight: bolder;">
+                        <span>總計</span>
+                        <span>$1300</span>
+                    </div>
+                </div>
+                <div class="border border-primary">
+                    <div class="bg-primary text-info text-center py-3 mb-3">
+                        <h3>購物清單</h3>
+                    </div>
+                    <div class="row text-info mb-3">
+                        <div class="col-6">
+                            <div class="bg-cover ml-4 img-fluid"
+                                style="background-image: url(../img/food-photographer-jennifer-pallian-306895-unsplash.jpg);width: 120px;height: 80px">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="">甜心草莓優格（1）</div>
+                            <div style="font-size:20px;font-weight: bolder;">$250</div>
+                        </div>
+                    </div>
+                    <div class="row text-info mb-3">
+                        <div class="col-6">
+                            <div class="bg-cover ml-4 img-fluid"
+                                style="background-image: url(../img/brooke-lark-96398-unsplash.jpg);width: 120px;height: 80px">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="">地域莓草派（1）</div>
+                            <div style="font-size:20px;font-weight: bolder;">$450</div>
+                        </div>
+                    </div>
+                    <div class="row text-info mb-3">
+                        <div class="col-6">
+                            <div class="bg-cover ml-4 img-fluid"
+                                style="background-image: url(../img/whitney-wright-282068-unsplash.jpg);width: 120px;height: 80px">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="">焦糖甜甜圈（1）</div>
+                            <div style="font-size:20px;font-weight: bolder;">$300</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-secondary">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-5 col-sm-6 col-10 mt-5">
+                        <img src="img/logo-light.svg" alt="" height="40px">
+                        <span class="subscribe-title text-primary ml-4">訂閱你我的甜蜜郵件</span>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="subscribe-input-group input-group my-5 mx-auto">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0" id="basic-addon1"
+                                    style="background-color:#EAF0ED;padding-left: 24px"><i
+                                        class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control border-0 border border-primary bg-primary"
+                                placeholder="" aria-label="Username" aria-describedby="basic-addon1"
+                                style="height: 56px;">
+                            <div class="input-group-append">
+                                <button class="btn btn-success rounded-0" type="button" id="button-addon2"
+                                    style="width:64px"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-bg bg-primary pt-5">
+            <div class="container">
+                <div class="row ml-sm-9">
+                    <div class="col-sm-6">
+                        <img src="img/logotype-sm-dark.svg" alt="" height="27px">
+                        <div class="info text-secondary">
+                            07-1234-5678
+                            <br>
+                            sweetaste@email.com
+                            <br>
+                            800 高雄市新興區幸福路 520 號
+                            <br>
+                            <div class="my-sm-5 mt-5">
+                                <a href="#"><img src="img/ic-line@.svg" alt="" width="32px"></a>
+                                <a href="#"><img src="img/ic-facebook.svg" alt="" width="32px"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 text-sm-right">
+                        <img src="img/sm-今天是個吃甜點的好日子.svg" alt="" width="60px" class="footer-slogan">
+                        <div class="text-secondary mt-5">© 2018 Sweetaste* All Rights Reserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+.subscribe-title {
+    font-size: 24px;
+}
+
+.subscribe-input-group {
+    height: 56px;
+    width: 445px;
+}
+
+.info {
+    margin-top: 115px
+}
+
+
+@media(max-width:768px) {
+    .subscribe-input-group {
+        width: 295px;
+    }
+}
+
+
+@media(max-width:576px) {
+    .info-bg {
+        padding-bottom: 30px
+    }
+
+    .info {
+        margin-top: 40px
+    }
+
+    .footer-slogan {
+        display: none;
+    }
+}

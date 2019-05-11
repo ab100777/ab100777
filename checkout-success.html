@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="home.html"><img src="img/logo-all-dark.svg" alt="" height="40px"
+                    class="navbar-logo"></a>
+            <a class="nav-link text-secondary order-sm-2 " href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <div class="collapse navbar-collapse order-sm-1" id="navbarNav">
+                <ul class="navbar-nav ml-auto" style="font-weight: bolder;">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="home.html">首頁<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="product.html">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="login.html">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container px-sm-3 px-0">
+        <div class="checkout-success-banner bg-cover img-fluid mb-sm-7"
+            style="background-image: url(../img/brooke-lark-385507-unsplash.jpg)">
+            <div class="row no-gutters">
+                <div class="mx-auto" style="margin-top:130px">
+                    <div class="col-12 checkout-success-progress-line d-flex justify-content-between px-0">
+                        <div class="progress-dot checkout-success-progress-active ">
+                            <i class="material-icons done-icon text-primary" style="font-size: 14px">
+                                done
+                            </i>
+                        </div>
+                        <div class="progress-dot checkout-success-progress-active">
+                            <i class="material-icons done-icon text-primary" style="font-size: 14px">
+                                done
+                            </i>
+                        </div>
+                        <div class="progress-dot checkout-success-progress-active">
+                            <i class="material-icons done-icon text-primary" style="font-size: 14px">
+                                done
+                            </i>
+                        </div>
+                    </div>
+                    <img src="img/lg-付款成功.svg" alt="" width="200px" class="mt-5 mb-6">
+                </div>
+            </div>
+            <a href="product.html" style="text-decoration:none"><button
+                    class="checkout-success-btn item-btn btn btn-block btn-success text-secondary mx-auto col-sm-3 py-3 rounded-0">繼續逛逛</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-secondary">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-5 col-sm-6 col-10 mt-5">
+                        <img src="img/logo-light.svg" alt="" height="40px">
+                        <span class="subscribe-title text-primary ml-4">訂閱你我的甜蜜郵件</span>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="subscribe-input-group input-group my-5 mx-auto">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text rounded-0" id="basic-addon1"
+                                    style="background-color:#EAF0ED;padding-left: 24px"><i
+                                        class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control border-0 border border-primary bg-primary"
+                                placeholder="" aria-label="Username" aria-describedby="basic-addon1"
+                                style="height: 56px;">
+                            <div class="input-group-append">
+                                <button class="btn btn-success rounded-0" type="button" id="button-addon2"
+                                    style="width:64px"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-bg bg-primary pt-5">
+            <div class="container">
+                <div class="row ml-sm-9">
+                    <div class="col-sm-6">
+                        <img src="img/logotype-sm-dark.svg" alt="" height="27px">
+                        <div class="info text-secondary">
+                            07-1234-5678
+                            <br>
+                            sweetaste@email.com
+                            <br>
+                            800 高雄市新興區幸福路 520 號
+                            <br>
+                            <div class="my-sm-5 mt-5">
+                                <a href="#"><img src="img/ic-line@.svg" alt="" width="32px"></a>
+                                <a href="#"><img src="img/ic-facebook.svg" alt="" width="32px"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 text-sm-right">
+                        <img src="img/sm-今天是個吃甜點的好日子.svg" alt="" width="60px" class="footer-slogan">
+                        <div class="text-secondary mt-5">© 2018 Sweetaste* All Rights Reserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

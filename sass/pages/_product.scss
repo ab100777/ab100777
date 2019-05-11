@@ -1,0 +1,22 @@
+.product-banner {
+    height: 496px;
+}
+
+.product-list {
+    text-align: center
+}
+
+
+@media(max-width:768px) {
+    .product-list {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+
+@media(max-width:576px) {
+    .product-slogan {
+        width: 60px;
+    }
+}

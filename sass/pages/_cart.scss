@@ -1,0 +1,85 @@
+.cart-img {
+    width: 110px;
+    height: 110px
+}
+
+.cart-totla-price {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.cart-list-border {
+    border-top: #EAF0ED 1px solid
+}
+
+.order-list-bg {
+    background-color: #3F5D45
+}
+
+.order-list-word {
+    color: #EAF0ED
+}
+
+
+@media(max-width:768px) {
+    .cart-order {
+        margin-bottom: 60px;
+    }
+}
+
+
+@media(max-width:576px) {
+    .cart-title {
+        margin-left: -15px;
+        margin-right: -15px
+    }
+
+    .cart-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .catr-trash-icon {
+        display: none
+    }
+
+    .sm-cart-word {
+        margin-left: -30px;
+    }
+
+    .sm-cart-button-group {
+        margin-top: -48px
+    }
+
+    .cart-totla-price {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-bottom: #EAF0ED 1px solid;
+        border-top: #EAF0ED 1px solid
+    }
+
+    .cart-list-border {
+        border: none
+    }
+
+    .cart-order {
+        margin-bottom: 0px
+    }
+
+    .order-list-title {
+        color: #3F5D45 !important;
+        background: #EAF0ED
+    }
+
+    .order-list-bg {
+        background-color: white
+    }
+
+    .order-list-word {
+        color: #3F5D45
+    }
+}
